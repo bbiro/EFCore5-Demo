@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6xzehIQ+g9HOTeXQpF3m3ofcZs+bn3EtVHEdB+vTpFXKVn2Dtr/66QXfiOzG+vUXSkQO8OP7PA5r+fwlHwdYyg==",
+  "dgSpecHash": "4eDBAWLZmLFWQuuEN8qdoQ8W1NwgeNw+aSX0RMZYvq5L8fI2UvSoN3k/LMY8RPx7oZhWDusnP1gGzlln7Rp3KA==",
   "success": true,
   "projectFilePath": "C:\\Demos\\SamuraiApp\\SamutaiApp\\SamuraiApp.Data\\SamuraiApp.Data.csproj",
   "expectedPackageFiles": [
@@ -12,7 +12,7 @@
     "C:\\Users\\barna\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.6\\microsoft.entityframeworkcore.design.5.0.6.nupkg.sha512",
     "C:\\Users\\barna\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.6\\microsoft.entityframeworkcore.relational.5.0.6.nupkg.sha512",
     "C:\\Users\\barna\\.nuget\\packages\\microsoft.entityframeworkcore.relational.design\\1.1.1\\microsoft.entityframeworkcore.relational.design.1.1.1.nupkg.sha512",
-    "C:\\Users\\barna\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.0\\microsoft.entityframeworkcore.tools.5.0.0.nupkg.sha512",
+    "C:\\Users\\barna\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.6\\microsoft.entityframeworkcore.tools.5.0.6.nupkg.sha512",
     "C:\\Users\\barna\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\barna\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\barna\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
