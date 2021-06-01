@@ -223,5 +223,16 @@ namespace SamuraiApp.UI
             _context.Entry(samurai).Collection(s => s.Quotes).Load();
             _context.Entry(samurai).Reference(s => s.Horse).Load();
         }
+        private static void ModifyingRelatedDataWhenNotTracked()
+        {
+            var samurai = _context.Samurais.Include(s => s.Quotes).FirstOrDefault(s => s.SamuraiId == 2);
+            var quote = samurai.Quotes[0];
+            quote.Text = "Did you hear that again?";
+
+            using var newContext = new SamuraiContext();
+            //newContext.Quotes.Update(quote);
+            newContext.Entry(quote).State = EntityState.Modified;
+            newContext.SaveChanges();
+        }
     }
 }
