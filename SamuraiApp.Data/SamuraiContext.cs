@@ -24,7 +24,7 @@ namespace SamuraiApp.Data
         }
         protected override void OnConfiguring (DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql("Server=localhost;Database=SamuraiApp;Uid=pomelo;Pwd=P0m3l0;Convert Zero Datetime=True", new MySqlServerVersion(new Version(8, 0, 11)), options => options.MaxBatchSize(100))
+            optionsBuilder.UseMySql("Server=localhost;Database=SamuraiAppTest;Uid=pomelo;Pwd=P0m3l0;Convert Zero Datetime=True", new MySqlServerVersion(new Version(8, 0, 11)), options => options.MaxBatchSize(100))
                 .LogTo(Console.WriteLine, new[] { DbLoggerCategory.Database.Command.Name }, LogLevel.Information)
                 .EnableSensitiveDataLogging();
         } 
