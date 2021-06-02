@@ -28,6 +28,7 @@ namespace SamuraiApp.UI
             //Simpler_AddQuoteToExistingSamuraiNotTracked(1);
             //EagerLoadSamuraiWithQuotes();
             //ProjectSamuraisWithQuotes();
+            QueryUsingFromSqlRawStoredProc();
             Console.Write("Press any key...");
             Console.ReadKey();
         }
@@ -233,6 +234,12 @@ namespace SamuraiApp.UI
             //newContext.Quotes.Update(quote);
             newContext.Entry(quote).State = EntityState.Modified;
             newContext.SaveChanges();
+        }
+
+        private static void QueryUsingFromSqlRawStoredProc()
+        {
+            var text = "Happy";
+            var samurais = _context.Samurais.FromSqlRaw("CALL `SamuraisWhoSaidAWord`({0})", text).ToList();
         }
     }
 }

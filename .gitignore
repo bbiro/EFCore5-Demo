@@ -3,10 +3,12 @@
 *.user
 _ReSharper.*/
 *.sdf
-bin/
-obj/
-Debug/
-Release/
+*/**/bin/Debug
+*/**/bin/Release
+*/**/obj/Debug
+*/**/obj/Release
 *.opensdf
 *.tlog
 *.log
+*.dll
+.vs/

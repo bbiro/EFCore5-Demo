@@ -7,6 +7,7 @@ namespace SamuraiApp.Data
 {
     public class SamuraiContext: DbContext
     {
+        public DbSet<SamuraiBattleStat> SamuraiBattleStat { get; set; }
         public DbSet<Server> Servers { get; set; }
         public DbSet<Samurai> Samurais { get; set; }
         public DbSet<Quote> Quotes { get; set; }
@@ -40,6 +41,9 @@ namespace SamuraiApp.Data
                  bs => bs.HasOne<Samurai>().WithMany())
                 .Property(bs => bs.DateJoined)
                 .ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<Horse>().ToTable("Horses");
+            modelBuilder.Entity<SamuraiBattleStat>().HasNoKey().ToView("SamuraiBattleStats");
         }
         
         public class Server
